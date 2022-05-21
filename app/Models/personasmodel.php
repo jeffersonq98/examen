@@ -14,7 +14,7 @@ class personasmodel extends Model
         'nombre',
         'apellido',
         'direccion',
-        'telefono'
+        'telefono',
        
     ];
 }

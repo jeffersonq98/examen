@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
-use Illuminate\Support\Facades\DB;
-
 //esta linea me llama el modelo creado previamente
-use App\Models\personas;
+use App\Models\personasmodel;
 
 
 class personascontroller extends Controller
@@ -19,7 +16,7 @@ class personascontroller extends Controller
     public function index()
     {
         //
-        $persona=personas::all(); //traiga todo lo que tiene aqui tema_-model
+        $persona=personasmodel::all(); //traiga todo lo que tiene aqui -model
         return $persona;
     }
 
